@@ -1,0 +1,19 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    # ingress.kubernetes.io/rewrite-target: /
+  labels:
+    app: hello
+  name: hello-no-host
+  namespace: jirayu
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        backend:
+          serviceName: hello
+          servicePort: 80
