@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cat ns.yml \
-registry-secret.yml \
+cat ns.yaml \
+registry-secret.yaml \
 deployment.yaml \
 service.yaml \
 ingress.yaml \
