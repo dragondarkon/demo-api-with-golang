@@ -2,7 +2,7 @@
 
 cat ns.yml \
 registry-secret.yml \
-deployment.yaml \
-service.yaml \
-ingress.yaml \
+deployment.yml \
+service.yml \
+ingress.yml \
 > completed.yml 
